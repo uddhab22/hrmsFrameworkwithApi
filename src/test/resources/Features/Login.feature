@@ -1,7 +1,7 @@
-@sprint1 @login
+  @smoke
 Feature: Login
 
-  @smoke
+
   Scenario: Valid Login
     Given I open browser and navigate to HRMS
     When I enter valid username and valid password
@@ -10,7 +10,7 @@ Feature: Login
     Then I close browser
 
 
-  @regression
+ 
   Scenario: Invalid Login
     Given I open browser and navigate to HRMS
     When I enter valid usernam and invalid password
@@ -18,7 +18,7 @@ Feature: Login
     Then I see error message
     And I close browser
     
-	@regression
+	
   Scenario Outline: Invalid login and message validation
     When I enter "<username>" and "<password>"
     And I clicked on login Button
