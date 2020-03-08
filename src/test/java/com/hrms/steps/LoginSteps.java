@@ -18,7 +18,7 @@ public class LoginSteps extends CommonMethods{
 	@When("I enter valid username and valid password")
 	public void i_enter_valid_username_and_valid_password() {
 		sendText(login.username, "Admin");
-		sendText(login.password, "Syntax@123");
+		sendText(login.password, "Hum@nhrm123");
 	}
 
 	@When("I clicked on login Button")
